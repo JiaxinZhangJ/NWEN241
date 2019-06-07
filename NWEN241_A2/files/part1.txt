@@ -1,0 +1,57 @@
+float* q1;
+long int* func1(int i, int j);
+char* func2(const char* p);
+int* i[20];
+Char[4][] ={"cyan", "magenta","yellow", "black"}
+
+//	Task 2
+&u = 1100
+&v = 1101
+pv = 1101
+pv = 66
+u = 67
+
+//	Task 3
+1.
+	The output is:
+		57    80
+		80    80
+	(int1 = 57 int2 = 80)
+	(*int1Ptr = 80 *int2Ptr =80)
+
+2.
+// int int1 = 26
+	The first line assign 26 to int1 which
+	// int int2 = 45
+	the second line do the similar thing assign 45 to int2.
+// *int1Ptr = &int1;
+	The third line makes pointer int1Ptr pointing to the address of int1.
+// *int2Ptr = &int2
+	The fourth line makes pointer int2Ptr pointing to the address of int2.
+// *int1Ptr = 89
+	The fifth line change the value of int1 to 89, because pointer int1Ptr is pointing to int1 right now,
+	Hence the value holding in int1 changed to 89
+// *int2Ptr = 62
+	The 6th line change the value of int2 to 62, because int2Ptr is pointing to the address of int2 hence it changes
+	the value of int2.
+// int1Ptr = int2Ptr
+	The 7th line change the value in int1Ptr which let the Pointers are pointing to the same address, which is the
+	same address of int2.
+//*int1Ptr = 80
+	The 8th line change the value in int2 to 80, because int1Ptr is currently pointing to int2, hence it gonna
+	change the value holding in int2.
+//int1 = 57
+	The 9th line change the value holding in int1 which changes 89 to 57.
+
+//Task 4
+//challenge
+1. 1102
+2.
+3. 1106
+//Task 5
+1. string* ptr = strPtr;
+	for(int i =0; i<4;i++){
+      cout<<*ptr<<endl;
+      ptr++;
+    }
+2. delete (strPtr);
