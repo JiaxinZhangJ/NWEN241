@@ -1,0 +1,18 @@
+ 
+dbserver: dbserver.o t2main.o
+	gcc -o dbserver dbserver.o t2main.o
+	
+dbserverf: dbserver.o t4main.o
+	gcc -o dbserverf dbserver.o t4main.o
+
+dbserver.o: dbserver.c dbserver.h
+	gcc -c dbserver.c
+	
+t2main.o: t2main.c dbserver.h
+	gcc -c t2main.c
+
+t4main.o: t4main.c dbserver.h
+	gcc -c t4main.c	
+	
+clean:
+	rm -rf *.o dbserver dbserverf
